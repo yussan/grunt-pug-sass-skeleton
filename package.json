@@ -1,0 +1,27 @@
+{
+  "name": "grunt-pug-sass-boilerplate",
+  "version": "0.0.1",
+  "description": "boilerplate of Pug Sass project using Grunt",
+  "main": "index.js",
+  "scripts": {
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/idmore/byidmore-design-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/idmore/byidmore-design-2/issues"
+  },
+  "homepage": "https://gitlab.com/idmore/byidmore-design-2#README",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

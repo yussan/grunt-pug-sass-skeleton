@@ -2,7 +2,8 @@
 boilerplate project of pug and sass using grunt
 
 ## About 
-All pug and sass source code please put it on `./src`. Build result html and css wil be on `./dist`.
+All pug, sass and js source code please put it on `./src`. Build result html, css and js
+ wil be on `./dist`.
 
 ## Prerequisites
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>

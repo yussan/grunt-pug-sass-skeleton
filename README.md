@@ -1,7 +1,7 @@
 # grunt-pug-sass-boilerplate
 boilerplate project of pug and sass using grunt
 
-![cover grunt+pug+sass+js](https://plus.google.com/photos/photo/114267661918035169322/6466983274194034466?icm=false&iso=true&authkey=CMDXvKHQ8bbGpQE&sqid=100875929141897651837&ssid=882c4247-7425-4414-9125-6d325be3a6f4)
+![cover grunt+pug+sass+js](https://lh3.googleusercontent.com/Nv4geRPuwmTNwm40DasXLbSoRrLBtxF48R-FvRQlkQhKAM-I3Xcm388y80QoUimapOl_vRozBKok6iQHsddebtM9LY_7zMtOA7pw2w=w1920-h1080-rw-no)
 
 ## About 
 All pug, sass and js source code please put it on `./src`. Build result html, css and js

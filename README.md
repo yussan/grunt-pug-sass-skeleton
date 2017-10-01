@@ -22,3 +22,10 @@ npm install
 npm run start
 ```
 
+## Contributing
+https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md
+
+## Changelog
+https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CHANGELOG.md
+
+

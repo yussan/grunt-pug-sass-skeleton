@@ -12,7 +12,7 @@ All pug, sass and js source code please put it on `./src`. Build result html, cs
 We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
 
 ### images
-
+We are using `grunt-contrib-imagemin` to compress all image inside `src/images` to `dist/images`. 
 
 ## Prerequisites
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>

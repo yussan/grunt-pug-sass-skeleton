@@ -1,5 +1,6 @@
 module.exports = grunt => {
   grunt.initConfig({
+    // pug task
     pug: {
       compile: {
         options: {
@@ -16,6 +17,8 @@ module.exports = grunt => {
         }]
       }
     },
+
+    // sass task
     sass: {
       dist: {
         options: {
@@ -30,6 +33,8 @@ module.exports = grunt => {
         }]
       }
     },
+
+    // uglify task (js minify)
     uglify: {
       my_target: {
         files: {
@@ -37,6 +42,30 @@ module.exports = grunt => {
         }
       }
     },
+
+    // copy task (copy src/libraries to dist/libraries)
+    copy: {
+      main: {
+        expand: true,
+        cwd: 'src',
+        src: ['libraries/**'],
+        dest: 'dist/'
+      }
+    },
+
+    // image compress task (compress all image src/images to dist/images)
+    imagemin : {
+      dynamic: {
+          files: [{
+              expand: true,
+              cwd: 'src/',
+              src: ['images/**/*.{png,jpg,gif}'],
+              dest: 'dist'
+          }]
+      }
+    },
+
+    // auto refresh view on change in dist directory
     browserSync: {
       dev: {
         bsFiles: {
@@ -48,8 +77,10 @@ module.exports = grunt => {
             watchTask: true,
             server: './dist'
         }
-    }
+      }
     },
+
+    // watch change inside directory to run task
     watch: {
       pug: {
         files: ['src/pug/**/*.pug'],
@@ -62,6 +93,14 @@ module.exports = grunt => {
       js: {
         files: ['src/js/**/*.js'],
         tasks: ['uglify']
+      },
+      copy: {
+        files: ['src/libraries/**'],
+        tasks: ['copy']
+      },
+      imagemin: {
+        files: ['src/images/**'],
+        tasks: ['imagemin']
       }
     }
   });
@@ -72,9 +111,10 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
-  
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   //register default task
-  grunt.registerTask('default', ['pug', 'sass', 'uglify', 'browserSync', 'watch'])
+  grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'browserSync', 'watch'])
 };
 

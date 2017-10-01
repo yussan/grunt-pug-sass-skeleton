@@ -10,16 +10,15 @@ All pug, sass and js source code please put it on `./src`. Build result html, cs
 ## Prerequisites
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>
 - <a href="yarnpkg.com/lang/en/docs/cli/global/" target="_blank">yarn recomended</a>
-## First time
 
-### Instalation
+## Instalation
 ```
-npm install 
+yarn install 
 ```
 
-## Build and Development
+## Build
 ```
-npm run start
+yarn run start
 ```
 
 ## Contributing

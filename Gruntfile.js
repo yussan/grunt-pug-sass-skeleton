@@ -64,7 +64,7 @@ module.exports = grunt => {
           }]
       }
     },
-    //minify css
+    //minify css (only tun in production)
     cssmin: {
       target: {
         files: [{
@@ -76,7 +76,6 @@ module.exports = grunt => {
         }]
       }
     },
-    //it will replace original file. If you want to keep both css files, change the ext to .min.css or something else ending with .css
     // auto refresh view on change in dist directory
     browserSync: {
       dev: {
@@ -125,8 +124,15 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   //register default task
-  grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'browserSync', 'watch'])
+  if(process.env.NODE_ENV == 'production')
+  {
+    grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'cssmin'])
+  }else 
+  {
+    grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'browserSync', 'watch'])
+  }
 };
 

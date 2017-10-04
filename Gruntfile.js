@@ -64,7 +64,19 @@ module.exports = grunt => {
           }]
       }
     },
-
+    //minify css
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'dist/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'dist/css',
+          ext: '.css'
+        }]
+      }
+    },
+    //it will replace original file. If you want to keep both css files, change the ext to .min.css or something else ending with .css
     // auto refresh view on change in dist directory
     browserSync: {
       dev: {

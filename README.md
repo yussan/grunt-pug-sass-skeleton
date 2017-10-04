@@ -23,9 +23,14 @@ We are using `grunt-contrib-imagemin` to compress all image inside `src/images` 
 yarn install 
 ```
 
-## Build
+## Build for Development
 ```
-yarn run start
+yarn dev:build
+```
+
+## Build for Production
+```
+yarn prod:build
 ```
 
 ## Contributing

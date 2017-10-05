@@ -23,20 +23,22 @@ boilerplate project of pug and sass using grunt
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>
 - <a href="yarnpkg.com/lang/en/docs/cli/global/" target="_blank">yarn recomended</a>
 
-## Instalation
-```
-yarn install 
-```
+## Commands
 
-## Build for Development
-```
-yarn dev:build
-```
+  * ### Instalation
+      ```
+      yarn install 
+      ```
 
-## Build for Production
-```
-yarn prod:build
-```
+  * ### Build for Development
+      ```
+      yarn dev:build
+      ```
+
+  * ### Build for Production
+      ```
+        yarn prod:build
+      ```
 
 ## Contributing
 https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md

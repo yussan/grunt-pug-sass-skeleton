@@ -4,6 +4,8 @@ boilerplate project of pug and sass using grunt
 ![cover grunt+pug+sass+js](https://lh3.googleusercontent.com/Nv4geRPuwmTNwm40DasXLbSoRrLBtxF48R-FvRQlkQhKAM-I3Xcm388y80QoUimapOl_vRozBKok6iQHsddebtM9LY_7zMtOA7pw2w=w1920-h1080-rw-no)
 
 ## Grunt Contrib
+* ### Pug to Html
+  `grunt-contrib-pug`
 * ### Sass to CSS 
   `grunt-contrib-sass`
 * ### Js minify

@@ -6,7 +6,8 @@ module.exports = grunt => {
         options: {
           data: {
             debug: true
-          }
+          },
+          pretty: true
         },
         files: [{
           src: '*.pug',

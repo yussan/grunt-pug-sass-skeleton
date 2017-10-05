@@ -3,16 +3,19 @@ boilerplate project of pug and sass using grunt
 
 ![cover grunt+pug+sass+js](https://lh3.googleusercontent.com/Nv4geRPuwmTNwm40DasXLbSoRrLBtxF48R-FvRQlkQhKAM-I3Xcm388y80QoUimapOl_vRozBKok6iQHsddebtM9LY_7zMtOA7pw2w=w1920-h1080-rw-no)
 
-## About 
-### pug, sass and js
-All pug, sass and js source code please put it on `./src`. Build result html, css and js
- wil be on `./dist`.
-
-## libraries
-We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
-
-### images
-We are using `grunt-contrib-imagemin` to compress all image inside `src/images` to `dist/images`. 
+## Gunt Contrib
+* ### Sass to CSS 
+  `grunt-contrib-sass`
+* ### Js minify
+  `grunt-contrib-uglify`
+* ### Copy
+  We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
+* ### Image Minify
+  We are using `grunt-contrib-imagemin` to compress all image inside `src/images` to `dist/images`. 
+* ### Watch and auto browser view changes
+  `grunt-contrib-watch` and `grunt-contrib-browsersync`
+* ### Css Minify (only for production)
+  `grunt-contrib-cssmin`
 
 ## Prerequisites
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>

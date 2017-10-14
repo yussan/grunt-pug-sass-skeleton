@@ -39,6 +39,10 @@ boilerplate project of pug and sass using grunt
       ```
         yarn prod:build
       ```
+## Used by
+* https://kompetisi.id
+* https://yussan.github.io
+* https://doconfig.netlify.com
 
 ## Contributing
 https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md

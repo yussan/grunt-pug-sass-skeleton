@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev:build",
-    "dev:build": "grunt",
-    "prod:build": "NODE_ENV=production grunt",
+    "dev:build": "npm run grunt",
+    "prod:build": "NODE_ENV=production npm run grunt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

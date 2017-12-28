@@ -1,6 +1,6 @@
 {
   "name": "grunt-pug-sass-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "boilerplate of Pug Sass project using Grunt",
   "main": "index.js",
   "scripts": {

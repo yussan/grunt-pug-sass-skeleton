@@ -17,9 +17,6 @@ All notable changes to this project will be documented in this file. See [standa
 * **package.json:** fixing failed command ([5123223](https://gitlab.com/idmore/byidmore-design-2/commit/5123223)), closes [#9](https://gitlab.com/idmore/byidmore-design-2/issues/9)
 
 
-
-# Changelog
-
 ## 0.0.3-stable
 - added copy libraries
 - added image compress (jpg, png, gif)

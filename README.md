@@ -11,7 +11,7 @@ boilerplate project of pug and sass using grunt
 * ### Js minify
   `grunt-contrib-uglify`
 * ### Copy
-  We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
+  If you have some libraries, please place inside `src/libraries`. We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
 * ### Image Minify
   We are using `grunt-contrib-imagemin` to compress all image inside `src/images` to `dist/images`. 
 * ### Watch and auto browser view changes
@@ -21,7 +21,7 @@ boilerplate project of pug and sass using grunt
 
 ## Prerequisites
 - <a href="https://nodejs.org/en/" target="_blank">NodeJS + NPM</a>
-- <a href="yarnpkg.com/lang/en/docs/cli/global/" target="_blank">yarn recomended</a>
+- <a href="yarnpkg.com/lang/en/docs/cli/global/" target="_blank">Yarn recomended as faster NPM alternative</a>
 
 ## Commands
 
@@ -30,12 +30,12 @@ boilerplate project of pug and sass using grunt
       yarn install 
       ```
 
-  * ### Build for Development
+  * ### Build and watch for development
       ```
       yarn dev:build
       ```
 
-  * ### Build for Production
+  * ### Build for production
       ```
         yarn prod:build
       ```
@@ -43,6 +43,7 @@ boilerplate project of pug and sass using grunt
 * https://kompetisi.id
 * https://yussan.github.io
 * https://doconfig.netlify.com
+* https://byidmore.com
 
 ## Contributing
 https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md

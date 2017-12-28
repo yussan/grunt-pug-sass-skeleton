@@ -45,6 +45,11 @@ boilerplate project of pug and sass using grunt
 * https://doconfig.netlify.com
 * https://byidmore.com
 
+## COntributors
+- [yussan](https://github.com/yussan)
+- [Sagar V](https://github.com/sagarvd01)
+- [Skip van 't Hof](https://github.com/Skipvanthof)
+
 ## Contributing
 https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md
 

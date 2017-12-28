@@ -1,13 +1,14 @@
 {
   "name": "grunt-pug-sass-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "boilerplate of Pug Sass project using Grunt",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev:build",
     "dev:build": "grunt",
     "prod:build": "NODE_ENV=production grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,8 @@
     "grunt-contrib-pug": "^1.0.0",
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^2.0.0",
+    "standard-version": "^4.2.0"
   },
   "dependencies": {
     "babel-core": "^6.26.0",

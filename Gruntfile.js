@@ -36,13 +36,13 @@ module.exports = grunt => {
     },
 
     // uglify task (js minify)
-    uglify: {
-      my_target: {
-        files: {
-          'dist/js/app.min.js': ['src/js/app.js']
-        }
-      }
-    },
+    // uglify: {
+    //   my_target: {
+    //     files: {
+    //       'dist/js/app.min.js': ['src/js/app.js']
+    //     }
+    //   }
+    // },
 
     // copy task (copy src/libraries to dist/libraries)
     copy: {
@@ -65,6 +65,7 @@ module.exports = grunt => {
           }]
       }
     },
+
     //minify css (only tun in production)
     cssmin: {
       target: {
@@ -77,6 +78,7 @@ module.exports = grunt => {
         }]
       }
     },
+
     // auto refresh view on change in dist directory
     browserSync: {
       dev: {
@@ -102,10 +104,18 @@ module.exports = grunt => {
         files: ['src/sass/**/*.sass'],
         tasks: ['sass']
       },
+      // js: {
+      //   files: ['src/js/**/*.js'],
+      //   tasks: ['uglify']
+      // },
       js: {
         files: ['src/js/**/*.js'],
-        tasks: ['uglify']
+        tasks: ['babel']
       },
+      babel: {
+         files: ['src/js/**/*.js'],
+         tasks: ['babel']
+       },
       copy: {
         files: ['src/libraries/**'],
         tasks: ['copy']
@@ -113,6 +123,18 @@ module.exports = grunt => {
       imagemin: {
         files: ['src/images/**'],
         tasks: ['imagemin']
+      }
+    },
+
+    // babel
+    babel: {
+      options: {
+        sourceMap: false
+      },
+      dist: {
+        files: {
+          'dist/js/app.js': 'src/js/app.js'
+        }
       }
     }
   });
@@ -126,14 +148,15 @@ module.exports = grunt => {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-babel');
 
   //register default task
   if(process.env.NODE_ENV == 'production')
   {
-    grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'cssmin'])
+    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'cssmin', 'babel'])
   }else 
   {
-    grunt.registerTask('default', ['pug', 'sass', 'uglify', 'copy', 'imagemin', 'browserSync', 'watch'])
+    grunt.registerTask('default', ['pug', 'sass', 'copy', 'imagemin', 'browserSync', 'babel', 'watch'])
   }
 };
 

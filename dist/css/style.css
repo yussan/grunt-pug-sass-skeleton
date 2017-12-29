@@ -1,1 +1,25 @@
-body,html{padding:0;margin:0}footer,nav{padding:10px;text-align:center}nav{background:#0049ff;text-transform:uppercase;font-weight:700;color:#fff}footer{background:#505050;color:#fff}.wrapper{display:flex;height:calc(100vh - 84px);background:#f4f4f4;color:#d3d3d3;align-items:center;justify-content:center}
+body, html {
+  padding: 0;
+  margin: 0; }
+
+nav, footer {
+  padding: 10px;
+  text-align: center; }
+
+nav {
+  background: #0049ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFF; }
+
+footer {
+  background: #505050;
+  color: #FFF; }
+
+.wrapper {
+  display: flex;
+  height: calc(100vh - 84px);
+  background: #f4f4f4;
+  color: #f4f4f4;
+  align-items: center;
+  justify-content: center; }

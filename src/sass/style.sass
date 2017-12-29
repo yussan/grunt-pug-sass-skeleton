@@ -1,3 +1,5 @@
+@import ./constants
+
 body, html 
     padding: 0
     margin: 0
@@ -5,17 +7,17 @@ nav, footer
     padding: 10px
     text-align: center
 nav
-    background: #0049ff 
+    background: $color-primary-bg
     text-transform: uppercase
     font-weight: bold
-    color: #FFF
+    color: $color-primary-text
 footer 
-    background: #505050
-    color: #FFF
+    background: $color-dark-bg
+    color: $color-primary-text
 .wrapper 
     display: flex
     height: calc(100vh - 84px)
     background: #f4f4f4
-    color: lightgray
+    color: $color-gray-bg
     align-items: center
     justify-content: center

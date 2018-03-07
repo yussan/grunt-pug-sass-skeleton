@@ -46,11 +46,17 @@ module.exports = grunt => {
 
     // copy task (copy src/libraries to dist/libraries)
     copy: {
-      main: {
+      library: {
         expand: true,
         cwd: 'src',
         src: ['libraries/**'],
         dest: 'dist/'
+      },
+      public: {
+        expand: true,
+        cwd: 'src/public',
+        src: ['**'],
+        dest: 'dist'
       }
     },
 
@@ -117,7 +123,7 @@ module.exports = grunt => {
          tasks: ['babel']
        },
       copy: {
-        files: ['src/libraries/**'],
+        files: ['src/libraries/**', 'src/public/**'],
         tasks: ['copy']
       },
       imagemin: {

@@ -5,22 +5,26 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev:build",
-    "dev:build": "grunt",
-    "prod:build": "NODE_ENV=production grunt",
+    "dev:build": "npm run clear:build && grunt",
+    "prod:build": "npm run clear:build && NODE_ENV=production grunt",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "release": "standard-version",
+    "clear:build": "rimraf dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/idmore/byidmore-design-2.git"
+    "url": "git@github.com:yussan/grunt-pug-sass-boilerplate.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/idmore/byidmore-design-2/issues"
+    "url": "https://github.com/yussan/grunt-pug-sass-boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/idmore/byidmore-design-2#README",
-  "devDependencies": {
+  "homepage": "https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/README.md",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-babili": "^0.1.4",
+    "babel-preset-es2015": "^6.24.1",
     "grunt": "^1.0.1",
     "grunt-babel": "^7.0.0",
     "grunt-browser-sync": "^2.2.0",
@@ -31,11 +35,7 @@
     "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
-    "standard-version": "^4.2.0"
-  },
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-babili": "^0.1.4",
-    "babel-preset-es2015": "^6.24.1"
+    "standard-version": "^4.2.0",
+    "rimraf": "^2.6.2"
   }
 }

@@ -10,7 +10,7 @@ module.exports = grunt => {
           pretty: true
         },
         files: [{
-          src: '*.pug',
+          src: '[^_]*.pug',
           cwd: 'src/pug/',
           dest: 'dist',
           expand: true,
@@ -26,7 +26,7 @@ module.exports = grunt => {
           style: 'inline'
         },
         files: [{
-          src: '*.sass',
+          src: '[^_]*.sass',
           cwd: 'src/sass/',
           dest: 'dist/css',
           expand: true,
@@ -34,15 +34,6 @@ module.exports = grunt => {
         }]
       }
     },
-
-    // uglify task (js minify)
-    // uglify: {
-    //   my_target: {
-    //     files: {
-    //       'dist/js/app.min.js': ['src/js/app.js']
-    //     }
-    //   }
-    // },
 
     // copy task (copy src/libraries to dist/libraries)
     copy: {
@@ -110,10 +101,6 @@ module.exports = grunt => {
         files: ['src/sass/**/*.sass'],
         tasks: ['sass']
       },
-      // js: {
-      //   files: ['src/js/**/*.js'],
-      //   tasks: ['uglify']
-      // },
       js: {
         files: ['src/js/**/*.js'],
         tasks: ['babel']
@@ -148,7 +135,6 @@ module.exports = grunt => {
   // initial
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-copy');

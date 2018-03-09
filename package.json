@@ -4,9 +4,9 @@
   "description": "boilerplate of Pug Sass project using Grunt",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev:build",
-    "dev:build": "npm run clear:build && grunt",
-    "prod:build": "npm run clear:build && NODE_ENV=production grunt",
+    "start": "npm run build:dev",
+    "build:dev": "npm run clear:build && grunt",
+    "build:prod": "npm run clear:build && NODE_ENV=production grunt",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "standard-version",
     "clear:build": "rimraf dist"
@@ -32,7 +32,6 @@
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-pug": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
     "standard-version": "^4.2.0",

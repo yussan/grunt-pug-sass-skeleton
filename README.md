@@ -10,8 +10,8 @@ boilerplate project of pug and sass using grunt
   `grunt-contrib-pug`
 * ### Sass to CSS 
   `grunt-contrib-sass`
-* ### Js minify
-  `grunt-contrib-uglify`
+* ### ES6 Support and minify
+  `grunt-babel`
 * ### Copy
   If you have some libraries, please place inside `src/libraries`. We are using `grunt-contrib-copy` to copy all inside `src/libraries` to `dist/libraries`. 
 * ### Image Minify
@@ -34,12 +34,12 @@ boilerplate project of pug and sass using grunt
 
   * ### Build and watch for development
       ```
-      yarn dev:build
+      yarn start
       ```
 
   * ### Build for production
       ```
-        yarn prod:build
+      yarn build:prod
       ```
 ## Used by
 * https://kompetisi.id
@@ -53,9 +53,9 @@ boilerplate project of pug and sass using grunt
 - [Skip van 't Hof](https://github.com/Skipvanthof)
 
 ## Contributing
-https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md
+[CONTRIBUTING.md](https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CONTRIBUTING.md)
 
 ## Changelog
-https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CHANGELOG.md
+[CHANGELOG.md](https://github.com/yussan/grunt-pug-sass-boilerplate/blob/master/CHANGELOG.md)
 
 

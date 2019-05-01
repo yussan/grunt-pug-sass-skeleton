@@ -27,7 +27,7 @@ boilerplate project of pug and sass using grunt
 
 ## Commands
 
-  * ### Instalation
+  * ### Installation
       ```
       yarn install 
       ```

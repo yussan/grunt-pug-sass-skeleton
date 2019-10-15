@@ -27,19 +27,21 @@ boilerplate project of pug and sass using grunt
 
 ## Commands
 
+Only use npm command
+
   * ### Installation
       ```
-      yarn install 
+      npm install 
       ```
 
   * ### Build and watch for development
       ```
-      yarn start
+      npm start
       ```
 
   * ### Build for production
       ```
-      yarn build:prod
+      npm build:prod
       ```
 ## Used by
 * https://kompetisi.id
